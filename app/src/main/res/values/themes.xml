@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PocketSort" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+    <style name="Theme.PocketSort" parent="Base.Theme.PocketSort" />
+</resources>

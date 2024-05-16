@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -34,30 +35,37 @@
             app:layout_constraintStart_toEndOf="@id/arrayLengthField"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/generateNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
+            android:background="@drawable/button_style"
             android:text="@string/generateInput"
+            android:textColor="@color/white"
             app:layout_constraintStart_toEndOf="@id/arrayLength"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/sorting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sorting_btn"
+            android:background="@drawable/button_style"
+            android:text="Sorting"
+            android:textSize="15sp"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/generateNumber"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/sort_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:background="@drawable/button_style"
             android:text="@string/sort_btn"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toTopOf="@+id/terminal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -73,4 +81,4 @@
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="453dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.core.widget.NestedScrollView>
+</FrameLayout>

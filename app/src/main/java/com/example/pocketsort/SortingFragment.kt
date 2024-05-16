@@ -1,22 +1,20 @@
 package com.example.pocketsort
 
+import android.R
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.example.pocketsort.databinding.FragmentSecondBinding
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import androidx.fragment.app.Fragment
+import com.example.pocketsort.databinding.FragmentSortingBinding
+import android.widget.Adapter
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
 class SortingFragment : Fragment() {
 
-    private var _binding: FragmentSecondBinding? = null
+    private var _binding: FragmentSortingBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -24,9 +22,8 @@ class SortingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+        _binding = FragmentSortingBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onDestroyView() {

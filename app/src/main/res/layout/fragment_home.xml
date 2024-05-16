@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/appName"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+       <!-- app:layout_constraintBottom_toTopOf="@id/textview_first"-->
+<!--<FrameLayout
+    android:id="@+id/sorting_btn"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/app_name"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="35dp">
+
+    <ImageButton
+        android:layout_width="355dp"
+        android:layout_height="200dp"
+        android:background="@drawable/corner_sorting_btn"
+        android:contentDescription="Sorting Button"
+        android:scaleType="fitXY"
+        android:src="@drawable/image1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:text="@string/sorting"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+</FrameLayout>-->
+        <Button
+            android:id="@+id/sorting_btn"
+            android:layout_height="200dp"
+            android:layout_width="350dp"
+            android:text="@string/sorting"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/app_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="35dp"
+            />
+        <Button
+            android:id="@+id/data_structures_btn"
+            android:layout_height="200dp"
+            android:layout_width="350dp"
+            android:text="@string/data_structures"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/sorting_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="35dp"
+            />
+<!--<FrameLayout
+    android:id="@+id/data_structures_btn"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/sorting_btn"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="35dp">
+        <ImageButton
+            android:layout_width="355dp"
+            android:layout_height="200dp"
+            android:src="@drawable/image1"
+            android:scaleType="fitXY"
+            android:background="@drawable/corner_sorting_btn"
+            android:contentDescription="Data Structures Button" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:text="@string/data_structures"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+</FrameLayout>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
